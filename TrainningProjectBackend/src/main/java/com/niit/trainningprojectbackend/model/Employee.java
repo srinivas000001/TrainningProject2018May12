@@ -1,28 +1,33 @@
 package com.niit.trainningprojectbackend.model;
 
 import javax.persistence.*;
-
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
+
+
 
 
 
 @Entity
 public class Employee {
 
+	
 	@Id
-	@NotNull
+	@GeneratedValue
 	private int employId;
+	
+	@NotNull
 	private String employFName;
 	private String employLName;
+	
 	private char gendar;
 	
 	@NotNull
 	private String mobileNumber;
-	
-	@NotNull
+
+
+	@Email
 	private String emailId;
-	
-	@NotNull
 	private String role;
 	
 	@NotNull
