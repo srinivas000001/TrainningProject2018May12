@@ -9,7 +9,8 @@ import javax.validation.constraints.NotNull;
 
 
 @Entity
-public class Employee {
+public class Employee extends Domain
+{
 
 	
 	@Id
