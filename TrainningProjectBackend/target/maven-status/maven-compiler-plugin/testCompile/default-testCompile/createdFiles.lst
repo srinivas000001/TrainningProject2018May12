@@ -1,2 +1,4 @@
 com\niit\trainningprojectbackend\AppTest.class
+com\niit\trainningprojectbackend\testcases\SkillsTest.class
+com\niit\trainningprojectbackend\testcases\HeroTest.class
 com\niit\trainningprojectbackend\testcases\EmployeeTest.class

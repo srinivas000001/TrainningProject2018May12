@@ -1,11 +1,8 @@
 package com.niit.trainningprojectrestapp.controller;
 
 import java.util.List;
-
 import javax.servlet.http.HttpSession;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,8 +22,7 @@ public class EmployeeController
 	private EmployeeDAO employeeDAO;
 	
 
-
-	@Autowired
+//	@Autowired
 	private Employee employee;
 
 	@Autowired
@@ -44,12 +40,10 @@ public class EmployeeController
 			else
 			{
 
-
 				for(Employee emp : list)
 				{
 					emp.setErrorCode("200");
 					emp.setErrorMsg("Success");
-
 
 				}
 			}
@@ -74,8 +68,5 @@ public class EmployeeController
 		return new ResponseEntity<Employee>(employee, HttpStatus.OK);
 	}
 
-
-
-	
 
 }

@@ -1,6 +1,5 @@
 package com.niit.trainningprojectbackend.testcases;
 
-
 import static org.junit.Assert.assertEquals;
 
 import java.util.List;
@@ -12,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-
+ 
 import com.niit.trainningprojectbackend.dao.EmployeeDAO;
 
 import com.niit.trainningprojectbackend.model.Employee;
@@ -42,7 +41,7 @@ public class EmployeeTest
 		//employee = (Employee) context.getBean("employee");
 
 	}
-/*
+
 	@Test
 	public void createEmployeeTestCase()
 	{
@@ -58,14 +57,9 @@ public class EmployeeTest
 		employee.setRole("HR");
 		
 	boolean flag = employeeDAO.registerEmployee(employee);
-
 		assertEquals("new EmployeeTestCase", true, flag);
-
 	}
-
-
-
-	@Test
+/*	@Test
 	public void listEmployeeTestCase()
 	{
 		log.info("List Users");
@@ -80,7 +74,6 @@ public class EmployeeTest
 		}
 		assertEquals(2,size);
 	}
-
 	@Test
 	public void validateEmployee()
 	{
@@ -88,12 +81,8 @@ public class EmployeeTest
 		String emailId = "rahul1@gmail.com";
 		String password = "rahul";
 		boolean flag = employeeDAO.validateUser(emailId, password);
-
-
 		assertEquals("Employee Validate Test", true, flag);
-
 		log.info("Validate User Ended");
 	}
 */
 }
-

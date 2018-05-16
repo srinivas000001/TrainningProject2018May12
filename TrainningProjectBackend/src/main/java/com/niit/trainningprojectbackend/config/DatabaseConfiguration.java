@@ -14,6 +14,7 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.niit.trainningprojectbackend.model.Employee;
 
 
 @Configuration
@@ -29,7 +30,7 @@ public class DatabaseConfiguration
 
 		dataSource.setDriverClassName("org.h2.Driver");
 
-		dataSource.setUrl(" jdbc:h2:tcp://localhost/~/term");
+		dataSource.setUrl(" jdbc:h2:tcp://localhost/~/skills");
 		dataSource.setUsername("sa");
 		dataSource.setPassword("sa");
 
@@ -52,7 +53,7 @@ public class DatabaseConfiguration
 
 		LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource);
 		sessionBuilder.addProperties(getHibernateProperties());
-	//	sessionBuilder.addAnnotatedClass(Employee.class);
+		sessionBuilder.addAnnotatedClass(Employee.class);
 
 		sessionBuilder.scanPackages("com.niit");
 

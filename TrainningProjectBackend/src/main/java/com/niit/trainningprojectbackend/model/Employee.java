@@ -4,10 +4,6 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
-
-
-
-
 @Entity
 public class Employee extends Domain
 {
@@ -17,21 +13,22 @@ public class Employee extends Domain
 	@GeneratedValue
 	private int employId;
 	
-	@NotNull
+	
 	private String employFName;
 	private String employLName;
 	
 	private char gendar;
 	
-	@NotNull
+
 	private String mobileNumber;
 
 
-	@Email
+
+	
 	private String emailId;
 	private String role;
 	
-	@NotNull
+	
 	private String password;
 
 	public int getEmployId() {
@@ -98,5 +95,9 @@ public class Employee extends Domain
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	
+
+
 
 }

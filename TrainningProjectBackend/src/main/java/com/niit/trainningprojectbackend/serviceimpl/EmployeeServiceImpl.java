@@ -3,12 +3,15 @@ package com.niit.trainningprojectbackend.serviceimpl;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.trainningprojectbackend.model.Employee;
 import com.niit.trainningprojectbackend.service.EmployService;
 
 
-@Service
+@Service("employeeService")
+@Transactional
+
 public class EmployeeServiceImpl implements EmployService
 {
 
